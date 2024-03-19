@@ -6,10 +6,10 @@
 // };
 
 // module.exports = nextConfig;
-const basePath = process.env.NODE_ENV === 'production' ? '/Next-Portfolio' : ''; // Adjust 'your-project-name'
+const basePath = process.env.NODE_ENV === 'production' ? '/Next-Portfolio' : '';
 
 export default {
   basePath,
-  export: 'static',
+  output: 'export', // Change this line
   reactStrictMode: true,
 };
