@@ -19,6 +19,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages@v4
         with:
-          github-token: ${{ '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' }}
+          github-token: ${{ secrets.NEXT_PORTFOLIO }}
           publish_dir: ./out  # Replace with your output directory
           branch: gh-pages  # Replace with your deployment branch
+          # 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
