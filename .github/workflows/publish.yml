@@ -1,0 +1,24 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]  # Replace with your deploy branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # Adjust Node.js version if needed
+      - name: Install dependencies
+        run: npm install
+      - name: Build Next.js app
+        run: npm run export  # Replace with your build command if different
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages@v4
+        with:
+          github-token: ${{ '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' }}
+          publish_dir: ./out  # Replace with your output directory
+          branch: gh-pages  # Replace with your deployment branch
