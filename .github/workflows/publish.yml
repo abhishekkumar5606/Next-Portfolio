@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build Next.js app
-        run: npm run export  # Replace with your build command if different
+        run: npm run build  # Replace with your build command if different
       - name: Deploy to GitHub Pages
         uses: abhishekkumar5606/Next-Portfolio
         with:
