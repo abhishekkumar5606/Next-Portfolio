@@ -17,7 +17,7 @@ jobs:
       - name: Build Next.js app
         run: npm run export  # Replace with your build command if different
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages@v4
+        uses: abhishekkumar5606/Next-Portfolio
         with:
           github-token: ${{ secrets.NEXT_PORTFOLIO }}
           publish_dir: ./out  # Replace with your output directory
