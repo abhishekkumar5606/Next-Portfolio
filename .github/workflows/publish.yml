@@ -20,5 +20,5 @@ jobs:
         uses: abhishekkumar5606/Next-Portfolio@main # Correct syntax for referencing the action
         with:
           github-token: ${{ secrets.NEXT_PORTFOLIO }}
-          publish_dir: ./out  # Replace with your output directory
-          branch: gh-pages  # Replace with your deployment branch
+          publish_dir: ./root  # Replace with your output directory
+          branch: main  # Replace with your deployment branch
