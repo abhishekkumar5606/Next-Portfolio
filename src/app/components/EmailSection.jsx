@@ -16,7 +16,7 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    // const endpoint = "/api/send";
 
     // Form the request for sending data to the server.
     const options = {
@@ -65,11 +65,10 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
           </p>
-        ) : (
+        
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <div className="mb-6">
               <label
@@ -124,10 +123,8 @@ const EmailSection = () => {
               Send Message
             </button>
           </form>
-        )}
       </div>
     </section>
   );
 };
-
 export default EmailSection;
